@@ -22,7 +22,7 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: 'spa',
+  ssr: false,
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
@@ -209,9 +209,7 @@ export default {
     },
   },
   colorMode: { preference: 'light' },
-  publicRuntimeConfig: {
-    BASE_URL: process.env.BASE_URL || '/',
-  },
+
   i18n: {
     locales: [
       {
@@ -233,6 +231,9 @@ export default {
     },
     lazy: true,
     langDir: 'locales/',
+  },
+  publicRuntimeConfig: {
+    BASE_URL: process.env.BASE_URL || '/',
   },
   privateRuntimeConfig: {
     API_KEY: process.env.API_KEY,
