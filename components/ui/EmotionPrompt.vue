@@ -3,13 +3,13 @@
     <div class="inline-flex flex-col flex-1 p-4">
       <TranslateDown>
         <div
-          class="flex flex-col lg:p-4 transition duration-150 ease-in-out border-2 border-dashed rounded-lg border-divider bg-primaryLight"
+          class="flex flex-col transition duration-150 ease-in-out border border-4 border-gray-800 rounded-2xl lg:p-4 border-divider bg-primaryLight"
         >
           <div class="inline-flex flex-col flex-1 p-4">
             <div class="text-2xl font-bold text-secondaryDark">
               {{ greet }} {{ this.$store.state.authUser.displayName }},
               <br />
-              How are you feeling today?
+              Qual o post de hoje?
             </div>
           </div>
           <div class="inline-flex flex-col flex-1 p-4 md:flex-row">
